@@ -14,7 +14,7 @@ def get_urls(soup):
         ul = a.find_all(text=re.compile("_pipe-delimited-export"))
         if ul != []:
             urls.append(a)
-    print('done scarping the url......!!!!')
+    print('done scraping the url......!!!!')
     return urls
 
 def download_and_extract(urls):
