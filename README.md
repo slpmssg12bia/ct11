@@ -42,7 +42,7 @@ cd ct11
 ```
 # change permission of .sh files
 ```
-chmod +x dump_to_s3.sh  remove_old_dump.sh
+chmod +x dump_to_s3.sh  remove_old_dump.sh  clean.sh 
 ```
 
 # install pip dependencies
