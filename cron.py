@@ -27,19 +27,19 @@ def download_and_extract(urls):
         print('file date :', fileDate)
         CurrentDate = datetime.today().date()
         print('current date :',CurrentDate)
-       #if fileDate == CurrentDate:
-        zip_link = texts['href']
-        print('Downloading %s :' %zip_link)
-        slashurl = zip_link.split('/')
-        wget.download(zip_link)
-        print("file downloaded....!!!")
-        subprocess.run(["mv", slashurl[3], "db.zip"])
-        subprocess.run(["unzip", "db.zip"])
-        subprocess.run(["bash","remove_old_dump.sh"])
-        print("uploading the latest dump to s3")
-        subprocess.run(["bash", "dump_to_s3.sh"])
-        subprocess.run(["bash", "clean.sh"])
-        return
+        if fileDate == CurrentDate:
+            zip_link = texts['href']
+            print('Downloading %s :' %zip_link)
+            slashurl = zip_link.split('/')
+            wget.download(zip_link)
+            print("file downloaded....!!!")
+            subprocess.run(["mv", slashurl[3], "db.zip"])
+            subprocess.run(["unzip", "db.zip"])
+            subprocess.run(["bash","remove_old_dump.sh"])
+            print("uploading the latest dump to s3")
+            subprocess.run(["bash", "dump_to_s3.sh"])
+            subprocess.run(["bash", "clean.sh"])
+            return
 
 r = requests.get('https://aact.ctti-clinicaltrials.org/download')
 soup = BeautifulSoup(r.content, 'html.parser')
