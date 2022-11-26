@@ -29,12 +29,15 @@ aws s3 ls
 
 # Clone your Repo
 ```
-git clone https://github.com/slpmssg12bia/clinicaltrials.git
+git clone https://github.com/slpmssg12bia/ct11.git
 
 
 ```
 # cd into the repository
+```
+cd ct11
 
+```
 # change permission of .sh files
 ```
 chmod +x dump_to_s3.sh  remove_old_dump.sh
