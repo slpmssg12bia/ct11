@@ -18,6 +18,8 @@ aws configure
 
 #enter aws and secret keys
 
+us-east-1
+
 json
 ```
 Check the Buckets
