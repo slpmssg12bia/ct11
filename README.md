@@ -16,7 +16,7 @@ sudo ./aws/install
 ```
 aws configure
 
-#enter keys
+#enter aws and secret keys
 
 json
 ```
