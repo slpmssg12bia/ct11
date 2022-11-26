@@ -62,7 +62,7 @@ crontab -e
 ```
 # Create Cron Job
 ```
-0    */12   *    *    *  /home/ubuntu/clinicaltrials/python3 cron.py
+0    */12   *    *    *  /home/ubuntu/ct11/python3 cron.py
 
 ctrl x
 
