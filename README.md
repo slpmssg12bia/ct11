@@ -51,6 +51,7 @@ pip install -r requirements.txt
 # install Cron jobs for Parsing
 ```
 pwd
+
 sudo apt-get install cron
 ```
 # Open Cron Tab
