@@ -2,13 +2,17 @@
 
 ```
 sudo apt update 
+
 sudo apt install unzip
+
 sudo apt install python3-pip -y
 ```
 # Install AWS CLI 
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 unzip awscliv2.zip
+
 sudo ./aws/install
 ```
 
@@ -25,19 +29,15 @@ json
 Check the Buckets
 ```
 aws s3 ls
-
 ```
 
 # Clone your Repo
 ```
 git clone https://github.com/slpmssg12bia/ct11.git
-
-
 ```
 # cd into the repository
 ```
 cd ct11
-
 ```
 # change permission of .sh files
 ```
