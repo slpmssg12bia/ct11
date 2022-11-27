@@ -20,7 +20,9 @@ sudo ./aws/install
 ```
 aws configure
 
-#enter aws and secret keys
+#enter aws key 
+
+#enter secret key
 
 us-east-1
 
