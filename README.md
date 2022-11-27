@@ -26,7 +26,6 @@ Check the Buckets
 ```
 aws s3 ls
 
-
 ```
 
 # Clone your Repo
@@ -62,7 +61,17 @@ crontab -e
 ```
 # Create Cron Job
 ```
-0    */12   *    *    *  /home/ubuntu/ct11/python3 cron.py
+#daily - to be used with daily_cron.py
+0    */12   *    *    *  /home/ubuntu/ct11/python3 daily_cron.py
+
+#OR
+
+#every Friday at midnight 
+0 0 * * FRI /home/ubuntu/ct11/python3 static_cron.py
+
+#OR
+#weekly/monthly, etc - to be used with static_cron.py
+#https://crontab.guru/examples.html
 
 ctrl x
 
